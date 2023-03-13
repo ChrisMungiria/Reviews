@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1d1c2c;
+    display: grid;
+    place-items: center;
+}
+
+.mainCard {
+    width: 300px;
+    height: 400px;
+    background-color: #221f32;
+}
+
+.title {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    width: fit-content;
+    color: white;
+    font-size: 12px;
+}
+
+.searchBox {
+    position: relative;
+    background-color: #262538;
+    width: fit-content;
+    border: 1px solid rgb(137, 148, 165);
+    border-radius: 2px;
+    top: 40px;
+    left: 30px;
+    width: 250px;
+    padding: 0px 10px;
+}
+
+input {
+    height: 40px;
+    width: 200px;
+    background-color: #262538;
+    border: none;
+    color: rgb(137, 148, 165);
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 12px;
+}
+
+i.fa.fa-search {
+    color: rgb(137, 148, 165);
+}
+
+.choices {
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.option {
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 10px;
+    padding: 10px 10px;
+    color: rgb(164, 164, 164);
+    margin: 5px;
+    background-color: #1d1c2c;
+    transition: all 0.5s ease-in-out;
+}
+
+.option.selected {
+    background-color: rgb(131, 131, 175);
+    color: white;
+}
+
+.reviews {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    top: 50px;
+    left: 50px;
+}
+
+.reviewCard {
+    position: relative;
+    width: inherit;
+    background-color: #2d2c41;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.nameContainer {
+    display: flex;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    font-size: 10px;
+    color: rgb(202, 202, 202);
+}
+
+.image {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(255, 130, 150);
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    position: relative;
+    top: 3px;
+    font-size: 10px;
+    margin-left: 4px;
+}
+
+.stars {
+    position: relative;
+    color: yellow;
+    margin-left: 20px;
+    top: 2px;
+}
+
+.review {
+    position: relative;
+    margin: 20px;
+    color: rgb(194, 194, 194);
+    font-size: 8px;
+}
+
+.bottom {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    top: -10px;
+}
+
+.date {
+    position: relative;
+    color: rgb(104, 153, 166);
+    font-size: 8px;
+    left: 20px;
+}
+
+.share {
+    cursor: pointer;
+    position: relative;
+    font-size: 7px;
+    color: rgb(124, 104, 166);
+    border: 1px solid #1d1c2c;
+    padding: 2px 5px;
+    border-radius: 2px;
+    top: -5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.share:hover {
+    box-shadow: 0px 5px 10px #1d1c2c;
+}
+
+#Alice {
+    background-color: rgb(209, 182, 73);
+}
